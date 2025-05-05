@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    color: white !important;
+    transition: background-color 5000s ease-in-out 0s;
+    backdrop-filter: blur(12px); /* backdrop-blur-lg */
+    background-color: rgba(255, 255, 255, 0.9); /* bg-opacity-90 */
+}
