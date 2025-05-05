@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 const corsOptions = {
-    origin: process.env.FRONTEND_URL,  // Use the URL from the .env file
+    origin:  process.env.FRONTEND_URL?.replace(/\/$/, ''),  // Use the URL from the .env file
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   };
